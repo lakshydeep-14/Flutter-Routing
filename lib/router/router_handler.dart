@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_routing/screens/firstScreen.dart';
-import 'package:flutter_routing/screens/fourthScreen.dart';
-import 'package:flutter_routing/screens/homepage.dart';
-import 'package:flutter_routing/screens/secondScreen.dart';
-import 'package:flutter_routing/screens/thirdScreen.dart';
+import 'package:flutter_routing/screens/first_screen.dart';
+import 'package:flutter_routing/screens/fourth_screen.dart';
+import 'package:flutter_routing/screens/home_page.dart';
+import 'package:flutter_routing/screens/second_screen.dart';
+import 'package:flutter_routing/screens/third_screen.dart';
 
 import 'app_routes.dart';
 
