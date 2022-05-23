@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 import '../router/router.dart';
 
-class SecondScreen extends StatefulWidget {
-  const SecondScreen({Key? key}) : super(key: key);
+class ThirdScreen extends StatefulWidget {
+  const ThirdScreen({super.key});
 
   @override
-  State<SecondScreen> createState() => _SecondScreenState();
+  State<ThirdScreen> createState() => _ThirdScreenState();
 }
 
-class _SecondScreenState extends State<SecondScreen> {
+class _ThirdScreenState extends State<ThirdScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,11 +19,11 @@ class _SecondScreenState extends State<SecondScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(child: Text("SecondScreen")),
+          Center(child: Text('ThirdScreen')),
           ElevatedButton(
               onPressed: () => NavigationRoutes()
                   .pushNamedAndRemoveUntil(context, Routes.home),
-              child: Text("Pop")),
+              child: Text('Pop')),
         ],
       ),
     );

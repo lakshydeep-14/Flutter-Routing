@@ -1,17 +1,17 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_routing/router/router.dart';
 
-import '../router/router.dart';
-
-class ThirdScreen extends StatefulWidget {
-  const ThirdScreen({Key? key}) : super(key: key);
+class FouthScreen extends StatefulWidget {
+  final String params;
+  const FouthScreen({super.key, required this.params});
 
   @override
-  State<ThirdScreen> createState() => _ThirdScreenState();
+  State<FouthScreen> createState() => _FouthScreenState();
 }
 
-class _ThirdScreenState extends State<ThirdScreen> {
+class _FouthScreenState extends State<FouthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,11 +19,11 @@ class _ThirdScreenState extends State<ThirdScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(child: Text("ThirdScreen")),
+          Center(child: Text('FourthScreen    ${widget.params}')),
           ElevatedButton(
               onPressed: () => NavigationRoutes()
                   .pushNamedAndRemoveUntil(context, Routes.home),
-              child: Text("Pop")),
+              child: Text('Pop')),
         ],
       ),
     );
