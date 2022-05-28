@@ -36,7 +36,7 @@ class _NamedHomePageState extends State<NamedHomePage> {
               child: Text("Third")),
           ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/fourth',
-                  arguments: "Lakshydeep"),
+                  arguments: "Lakshydeep Vikram"),
               child: Text("Fourth")),
         ],
       ),

@@ -21,8 +21,7 @@ class _NFouthScreenState extends State<NFouthScreen> {
         children: [
           Center(child: Text("FourthScreen    " + widget.params)),
           ElevatedButton(
-              onPressed: () =>
-                  NavigationRoutes().pushNamedAndRemoveUntil(context, '/'),
+              onPressed: () => Navigator.pushReplacementNamed(context, '/'),
               child: Text("Pop")),
         ],
       ),

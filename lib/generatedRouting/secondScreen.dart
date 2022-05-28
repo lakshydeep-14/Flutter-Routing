@@ -20,8 +20,8 @@ class _SecondScreenState extends State<SecondScreen> {
         children: [
           Center(child: Text("SecondScreen")),
           ElevatedButton(
-              onPressed: () => NavigationRoutes()
-                  .pushNamedAndRemoveUntil(context, Routes.home),
+              onPressed: () =>
+                  NavigationRoutes().pushReplacement(context, Routes.home),
               child: Text("Pop")),
         ],
       ),

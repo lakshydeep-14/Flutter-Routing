@@ -20,8 +20,7 @@ class _NSecondScreenState extends State<NSecondScreen> {
         children: [
           Center(child: Text("NSecondScreen")),
           ElevatedButton(
-              onPressed: () =>
-                  NavigationRoutes().pushNamedAndRemoveUntil(context, '/'),
+              onPressed: () => Navigator.pushReplacementNamed(context, '/'),
               child: Text("Pop")),
         ],
       ),

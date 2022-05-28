@@ -20,8 +20,8 @@ class _NThirdScreenState extends State<NThirdScreen> {
         children: [
           Center(child: Text("NThirdScreen")),
           ElevatedButton(
-              onPressed: () =>
-                  NavigationRoutes().pushNamedAndRemoveUntil(context, '/'),
+              onPressed: () => Navigator.pushNamedAndRemoveUntil(
+                  context, '/', (Route<dynamic> route) => false),
               child: Text("Pop")),
         ],
       ),

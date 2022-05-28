@@ -20,10 +20,10 @@ class _ASecondScreenState extends State<ASecondScreen> {
         children: [
           Center(child: Text("ASecondScreen")),
           ElevatedButton(
-              onPressed: () => Navigator.pushAndRemoveUntil(
-                  context,
-                  MaterialPageRoute(builder: (_) => AHomePage()),
-                  (route) => false),
+              onPressed: () => Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (_) => AHomePage()),
+                  ),
               child: Text("Pop")),
         ],
       ),

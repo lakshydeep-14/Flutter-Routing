@@ -36,7 +36,7 @@ class _GeneratedHomePageState extends State<GeneratedHomePage> {
               child: Text("Third")),
           ElevatedButton(
               onPressed: () => NavigationRoutes()
-                  .push(context, Routes.fourth, arguments: "Lakshydeep"),
+                  .push(context, Routes.fourth, arguments: "Lakshydeep Vikram"),
               child: Text("Fourth")),
         ],
       ),
